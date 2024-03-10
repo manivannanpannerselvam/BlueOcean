@@ -1,0 +1,89 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-09-24T14:34:41.996Z",
+        "line": 4,
+        "name": "Login with valid credentials - Feature 1, Scenario -1",
+        "description": "",
+        "id": "login-to-hrm-application;login-with-valid-credentials---feature-1--scenario--1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5034000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Home page",
+            "match": {
+              "location": "com.mobile.LoginDefinition.userOnHomePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 527000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters username as \"Admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Admin\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.mobile.LoginDefinition.entersUsername(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters password as \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 24
+                }
+              ],
+              "location": "com.mobile.LoginDefinition.entersPassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User should be able to login sucessfully",
+            "match": {
+              "location": "com.mobile.LoginDefinition.sucessfullLogin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ValidCredentials"
+          }
+        ]
+      }
+    ],
+    "name": "Login to HRM Application",
+    "description": "",
+    "id": "login-to-hrm-application",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/feature/Login.feature",
+    "tags": []
+  }
+]
